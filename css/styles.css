@@ -202,3 +202,15 @@ button {
 .transform {
 	background-image: url(../assets/imgs/icons/transform.svg);
 }
+
+
+@media screen and (max-width: 1150px) {
+	.container--flex {
+		flex-wrap: wrap;
+	}
+
+	.instruments,
+	.controls {
+		align-items: center;
+	}
+}
