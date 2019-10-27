@@ -6224,6 +6224,7 @@ window.addEventListener('load', function () {
 		matrix.width = 4;
 		matrix.height = 4;
 	let sizeControls = document.querySelectorAll('input[name="size"]');
+	let initialSizeControl = document.getElementById('initialSize');
 
 
 // Перевод данных из HEX в RGBA
@@ -6258,7 +6259,6 @@ window.addEventListener('load', function () {
 				isPic = true;
 			}
 		}
-				console.log(data);
 
 		if (isPic) {
 			let img = new Image(); 
@@ -6277,7 +6277,6 @@ window.addEventListener('load', function () {
 			newImageData.data[i] = data[i];
 		}
 
-		console.log(newImageData.data);
 		ctx.putImageData(newImageData, 0, 0);
 	};
 
@@ -6307,5 +6306,10 @@ window.addEventListener('load', function () {
 
 	sizeControls.forEach(el => el.addEventListener('click', sizeControlsHandler));
 
+
+
+// Отрисовка изображения при открытии страницы
+
+	initialSizeControl.click();
 
 });
