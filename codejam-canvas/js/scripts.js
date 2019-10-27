@@ -6225,6 +6225,9 @@ window.addEventListener('load', function () {
 		matrix.height = 4;
 	let sizeControls = document.querySelectorAll('input[name="size"]');
 
+
+// Перевод данных из HEX в RGBA
+
 	let convertToRgba = function (str) {
 		let result = [];
 		for (let i = 0; i < 6; i += 2) {
@@ -6234,6 +6237,9 @@ window.addEventListener('load', function () {
 		result.push(255);
 		return result;
 	};
+
+
+// Отрисовка изображений 
 
 	let draw = function (size) {
 		let data;
@@ -6276,7 +6282,7 @@ window.addEventListener('load', function () {
 	};
 
 
-
+// Изменение масштаба холста
 
 	let changeSize = function(value) {
 		let size = parseInt(value);
@@ -6287,6 +6293,9 @@ window.addEventListener('load', function () {
 	}
 
 
+
+// Обработчик контроллов
+
 	let sizeControlsHandler = function () {
 		let value = this.value;
 
@@ -6295,7 +6304,6 @@ window.addEventListener('load', function () {
 		draw(value);
 
 	};
-
 
 	sizeControls.forEach(el => el.addEventListener('click', sizeControlsHandler));
 
