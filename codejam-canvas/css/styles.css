@@ -183,11 +183,11 @@ button {
 	justify-content: center;
 }
 .canvas {
-	border: 1px solid yellow;
 	display: block;
 	width: 512px;
 	height: 512px;
-	image-rendering: pixelated
+	image-rendering: pixelated;
+	background-color: #eee;
 }
 
 .paint_bucket {
