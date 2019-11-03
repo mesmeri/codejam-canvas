@@ -140,9 +140,8 @@ button {
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 10px);
 	left: 20px;
-	transform: translateY(-50%);
 	background-position: center;
 	background-repeat: no-repeat;
 }
