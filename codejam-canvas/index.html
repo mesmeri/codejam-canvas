@@ -1,127 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
-	
-	<header class="header">
-		<div class="container">
-			<nav>
-				<button class="burger"></button>
-			</nav>
-			<h1 class="page_title">
-				CodeJam - Pallete
-			</h1>
-			<div class="side_menu">
-				<button class="side_btn"></button>
-			</div>
-		</div>
-	</header>
 
-	<main class="main">
-		<div class="container container--flex">
+  <header class="header">
+    <div class="container">
+      <nav>
+        <button class="burger"></button>
+      </nav>
+      <h1 class="page_title">
+        CodeJam - Pallete
+      </h1>
+      <div class="side_menu">
+        <button class="side_btn"></button>
+      </div>
+    </div>
+  </header>
 
-			<div class="instruments column">
-				<div class="block">
-					<ul class="top_list">
-						<li class="top_list-item">
-							<label class="label">Paint bucket
-								<input type="radio" name="tool" value="bucket">
-								<span class="icon paint_bucket"></span>
-							</label>
-						</li>
-						
-						<li class="top_list-item">
-							<label class="label">Choose color
-								<input type="radio" name="tool" value="chooseColor">
-							<span class="icon choose_color"></span>
-							</label>
-						</li>
-					</ul>
-					<ul class="list">
-						<li class="list-item">
-							<label class="label">Move
-								<input type="radio" name="tool" value="move">
-							<span class="icon move"></span>
-							</label>
-						</li>
-						<li class="list-item">
-							<label class="label">Transform
-							<span class="icon transform"></span>
-								<input type="radio" name="tool" value="transform">
-							</label>
-						</li>
-					</ul>
-				</div>
-			
-				<div class="block colors">
-					<ul class="top_list">
-						<li class="top_list-item">
-							<label class="label current_color">Current color
-								<input type="radio" name="color" value="">
-							<span class="icon"></span>
-							</label>
-						</li>
-						<li class="top_list-item">
-							<label class="label prev_color">Prev color
-								<input type="radio" name="color" value="">
-							<span class="icon"></span>
-							</label>
-						</li>
-					</ul>
-					<ul class="list">
-						<li class="list-item">
-							<label class="label red">red
-								<input type="radio" name="color" value="red">
-							<span class="icon"></span>
-							</label>
-						</li>
-						<li class="list-item">
-							<label class="label blue">blue
-								<input type="radio" name="color" value="blue">
-							<span class="icon"></span>
-							</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="controls column">
-				<div class="block sizing">
-					<ul class="top_list">
-						<li class="top_list-item">
-							<label class="label">4 x 4
-								<input id="initialSize" type="radio" name="size" value="4" checked>
-								<span class="icon"></span>
-							</label>
-						</li>
-						<li class="top_list-item">
-							<label class="label">32 x 32
-								<input type="radio" name="size" value="32">
-								<span class="icon"></span>
-							</label>
-						</li>
-						<li class="top_list-item">
-							<label class="label">256 x 256
-								<input type="radio" name="size" value="256">
-								<span class="icon"></span>
-							</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="dimension column">
-				<canvas class="canvas" id="canvas" width="512" height="512"></canvas>
-			</div>
+  <main class="main">
+    <div class="container container--flex">
 
-		</div>
-	</main>
+      <div class="instruments column">
+        <div class="block">
+          <ul class="top_list">
+            <li class="top_list-item">
+              <label class="label">Paint bucket
+                <input type="radio" name="tool" value="bucket">
+                <span class="icon paint_bucket"></span>
+              </label>
+            </li>
 
-	<script type="text/javascript" src="js/scripts.js"></script>
+            <li class="top_list-item">
+              <label class="label">Choose color
+                <input type="radio" name="tool" value="chooseColor">
+                <span class="icon choose_color"></span>
+              </label>
+            </li>
+          </ul>
+          <ul class="list">
+            <li class="list-item">
+              <label class="label">Move
+                <input type="radio" name="tool" value="move">
+                <span class="icon move"></span>
+              </label>
+            </li>
+            <li class="list-item">
+              <label class="label">Transform
+                <span class="icon transform"></span>
+                <input type="radio" name="tool" value="transform">
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block colors">
+          <ul class="top_list">
+            <li class="top_list-item">
+              <label class="label current_color">Current color
+                <input type="radio" name="color" value="">
+                <span class="icon"></span>
+              </label>
+            </li>
+            <li class="top_list-item">
+              <label class="label prev_color">Prev color
+                <input type="radio" name="color" value="">
+                <span class="icon"></span>
+              </label>
+            </li>
+          </ul>
+          <ul class="list">
+            <li class="list-item">
+              <label class="label red">red
+                <input type="radio" name="color" value="red">
+                <span class="icon"></span>
+              </label>
+            </li>
+            <li class="list-item">
+              <label class="label blue">blue
+                <input type="radio" name="color" value="blue">
+                <span class="icon"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="controls column">
+        <div class="block sizing">
+          <ul class="top_list" id="controls_panel">
+            <li class="top_list-item">
+              <label class="label">4 x 4
+                <input id="initialSize" type="radio" name="size" value="4" checked>
+                <span class="icon"></span>
+              </label>
+            </li>
+            <li class="top_list-item">
+              <label class="label">32 x 32
+                <input type="radio" name="size" value="32">
+                <span class="icon"></span>
+              </label>
+            </li>
+            <li class="top_list-item">
+              <label class="label">256 x 256
+                <input type="radio" name="size" value="256">
+                <span class="icon"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dimension column">
+        <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/cubes.js"></script>
+  <script type="text/javascript" src="js/codewars.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+
 </html>
